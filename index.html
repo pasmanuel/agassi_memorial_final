@@ -15,7 +15,7 @@
 		<link rel="icon" type="image/x-icon" href="./Images/logo.ico">
 
 		<style>
-			@media screen and (max-width:868px){
+			@media screen and (max-width:786px){
 				.msg{
 					display:block;
 				}
@@ -311,9 +311,68 @@
 		.to-next-page{
 			margin-top:300px;
 		}
+			/* whatsapp icon */
+			@keyframes fadeIn {
+				from{
+					opacity: 0;
+					transform:
+					translateY(20px);
+				}
+				to{
+					opacity: 1;
+					transform: translate(0);
+				}
+				}
+			@keyframes heartbeat {
+				0%, 100{
+					transform:scale(1);
+				}
+				50%{
+					transform:scale(1.1);
 
+				}
+			}
+			.whatsapp-icon{
+				position: fixed;
+				bottom: 50px;
+				right:20px;
+				width: 60px;
+				height: 60px;
+				z-index:1000;
+				animation: fadeIn 1s ease-in-out, heartbeat 2s infinite;
+
+			}
+			.whataspp-icon a{
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
 			
+			.whataspp-icon img {
+				width:100%;
+				height:100%;
+				border-radius:50%;
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+				transition: transform 0.3s;
+			}
+			.whataspp-icon img:hover{
+				transform: scale(1.1);
+			}
 	
+				@media(max-width:600px){
+					.whataspp-icon{
+						bottom: 80px;
+					}
+				}
+				
+				@media (max-width:400px){
+					.whataspp-icon{
+						display: none;
+					}
+				}
+					
+					
+				
 		</style>
 	</head>
 	<body>
@@ -501,7 +560,7 @@
 			<hr>
 		</section>
 
-		<section style=" background-color:#006a3e; padding:50px 0; ">
+		<section style=" background-color:#006a3e; padding:50px 0; width: 100%;">
 			<div class="holders">
 				<div class="is-holder" data-aos="fade-up-right">
 					<div class="round centered">
@@ -541,9 +600,7 @@
 				</div>
 			</div>
 		</section>
-		<style>
-			
-		</style>
+		
 		<section style=" width:90%; margin:100px auto;">
 			<div class="bestway" >
 				<div class="white half is-title title-1" data-aos="fade-right">
@@ -667,7 +724,13 @@
 			</div>
 		</div>
 	</section>
-		
+	
+	<div class="whatsapp-icon">
+		<a href="https://wa.me/0245471446" target="_blank">
+			<img src="./Images/icons8-whatsapp-48.png" title="whatsapp icons"  alt="whatsapp">
+		</a>
+	
+	</div>
 		<footer class="footer">
 			<div class="footer-container">
 			  <div class="footer-column">
@@ -695,7 +758,7 @@
 				  <li><a href="https://www.bing.com/ck/a?!&&p=7d14c313e1758b5fJmltdHM9MTcyMjI5NzYwMCZpZ3VpZD0zMzZhZmNiZC1kNGMwLTZhYWItMGM0Ni1lODBkZDUxODZiYTMmaW5zaWQ9NTE4Nw&ptn=3&ver=2&hsh=3&fclid=336afcbd-d4c0-6aab-0c46-e80dd5186ba3&psq=agassi-memorial+school&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3Blb3BsZS9BZ2Fzc2ktTWVtb3JpYWwtU2Nob29sLUVqaXN1LzEwMDA2MzgwMTA0MzMyMS8&ntb=1"><i class="fab fa-facebook-f"></i> Facebook</a></li>
 				  <li><a href="https://www.bing.com/ck/a?!&&p=de726fb9974abab3JmltdHM9MTcyMjI5NzYwMCZpZ3VpZD0zMzZhZmNiZC1kNGMwLTZhYWItMGM0Ni1lODBkZDUxODZiYTMmaW5zaWQ9NTIxMQ&ptn=3&ver=2&hsh=3&fclid=336afcbd-d4c0-6aab-0c46-e80dd5186ba3&psq=agassi-memorial+school&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9hZ2Fzc2lfbWVtb3JpYWxfc2Nob29sLw&ntb=1"><i class="fab fa-instagram"></i> Instagram</a></li>
 				  <li><a href="https://www.tiktok.com/@agassi.memorial.s"><i class="fab fa-twitter"></i>Tiktok</a></li>
-				  <p class="footer-email">agassi123@gmail.com</p>
+				  <p class="footer-email"><a href="">agassimemorialschool@gmail.com</a></p>
 
 				</ul>
 			  </div>

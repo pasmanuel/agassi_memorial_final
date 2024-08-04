@@ -903,6 +903,7 @@ input{
     height: 10vh;
     background-color: white;
     color: black;
+    font-size: 15px;
 }
 
 
@@ -1289,7 +1290,9 @@ input{
       justify-content: center;
     }
   
-    
+    .copy-right{
+        display: block;
+    }
   }
  
 
