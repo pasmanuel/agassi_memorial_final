@@ -371,7 +371,9 @@
     border-radius: 5px; /* Optional: Add border-radius for rounded corners */
   }
 
-
+  .offcanvas-header h5{
+    color: #fff;
+  }
 
  /* to-admission-in-progress-bar  */
 
@@ -1296,6 +1298,8 @@ input{
   
     .copy-right{
         display: block;
+        font-size: 10px;
+        padding: 0.3rem 1rem;
     }
   }
  
