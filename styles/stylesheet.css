@@ -958,6 +958,19 @@ input{
 .navbar-br {
     font-size: 30px;
 }
+.carousel-item img {
+    width: 100%; /* Adjust as needed */
+	height:90vh !important;
+    object-fit: fill; /* Ensure the image covers the entire area */
+	object-position:center;
+  }
+.image-holder{
+	width:400px;
+	height:400px;
+	border-radius:50%;
+	border:2px solid#006a3e;
+    object-fit: cover;
+}
 
 }
 /* addmission-in-progress-media */
