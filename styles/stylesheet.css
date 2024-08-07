@@ -17,6 +17,10 @@
 }
 
 
+.footer-column{
+    list-style: none;
+}
+
 
 .top-bar-container > div:nth-child(1),
 .top-bar-container > div:nth-child(3){

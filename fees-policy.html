@@ -85,6 +85,67 @@
 			background-color:whitesmoke;
 			color:goldenrod;
 		}
+
+		/* whatsapp icon */
+		@keyframes fadeIn {
+				from{
+					opacity: 0;
+					transform:
+					translateY(20px);
+				}
+				to{
+					opacity: 1;
+					transform: translate(0);
+				}
+				}
+			@keyframes heartbeat {
+				0%, 100{
+					transform:scale(1);
+				}
+				50%{
+					transform:scale(1.1);
+
+				}
+			}
+			.whatsapp-icon{
+				position: fixed;
+				bottom: 50px;
+				right:20px;
+				width: 60px;
+				height: 60px;
+				z-index:1000;
+				animation: fadeIn 1s ease-in-out, heartbeat 2s infinite;
+
+			}
+			.whataspp-icon a{
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			
+			.whataspp-icon img {
+				width:100%;
+				height:100%;
+				border-radius:50%;
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+				transition: transform 0.3s;
+			}
+			.whataspp-icon img:hover{
+				transform: scale(1.1);
+			}
+	
+				@media(max-width:600px){
+					.whataspp-icon{
+						bottom: 80px;
+					}
+				}
+				
+				@media (max-width:400px){
+					.whataspp-icon{
+						display: none;
+					}
+				}
+		
 		
 	</style>
 </head>
@@ -469,10 +530,18 @@
 			</div>
 		</div>
 	</section>	
+	<div class="whatsapp-icon">
+		<a href="https://wa.me/+233244270815" target="_blank">
+			<img src="./Images/icons8-whatsapp-48.png" title="whatsapp icons"  alt="whatsapp">
+		</a>
+	
+	</div>
     	<footer class="footer">
 		<div class="footer-container">
 			<div class="footer-column">
 			<img src="./Images/LOGO.png" alt="Logo" class="footer-logo">
+			<li><a href="mailto:agassimemorialschool@gmail.com">agassimemorialschool@gmail.com</a></li>
+
 		</div>
 		<div class="footer-column">
 			<h3 class="footer-heading">Our Academics</h3>
